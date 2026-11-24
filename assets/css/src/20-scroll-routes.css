@@ -1,0 +1,70 @@
+/* Scrollbars personalizadas v0.2.4 */
+.apm-sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,.34) transparent;
+  scrollbar-gutter: stable;
+}
+.apm-sidebar::-webkit-scrollbar { width: 7px; }
+.apm-sidebar::-webkit-scrollbar-track { background: transparent; }
+.apm-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.28);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 999px;
+  min-height: 44px;
+}
+.apm-sidebar::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,.46); background-clip: padding-box; }
+.apm-sidebar::-webkit-scrollbar-corner { background: transparent; }
+
+.apm-main,
+.apm-modal,
+.apm-table-wrap,
+.apm-settings-tabs,
+.apm-nav {
+  scrollbar-width: thin;
+  scrollbar-color: #d7c6cb transparent;
+}
+.apm-main::-webkit-scrollbar,
+.apm-modal::-webkit-scrollbar,
+.apm-table-wrap::-webkit-scrollbar,
+.apm-settings-tabs::-webkit-scrollbar,
+.apm-nav::-webkit-scrollbar { width: 8px; height: 8px; }
+.apm-main::-webkit-scrollbar-track,
+.apm-modal::-webkit-scrollbar-track,
+.apm-table-wrap::-webkit-scrollbar-track,
+.apm-settings-tabs::-webkit-scrollbar-track,
+.apm-nav::-webkit-scrollbar-track { background: transparent; }
+.apm-main::-webkit-scrollbar-thumb,
+.apm-modal::-webkit-scrollbar-thumb,
+.apm-table-wrap::-webkit-scrollbar-thumb,
+.apm-settings-tabs::-webkit-scrollbar-thumb,
+.apm-nav::-webkit-scrollbar-thumb {
+  background: #d7c6cb;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 999px;
+}
+.apm-main::-webkit-scrollbar-thumb:hover,
+.apm-modal::-webkit-scrollbar-thumb:hover,
+.apm-table-wrap::-webkit-scrollbar-thumb:hover,
+.apm-settings-tabs::-webkit-scrollbar-thumb:hover,
+.apm-nav::-webkit-scrollbar-thumb:hover { background: #bda7ae; background-clip: padding-box; }
+
+/* Mantém o scroll discreto no menu mobile */
+@media(max-width:680px){
+  .apm-nav{scrollbar-width:none;-ms-overflow-style:none}
+  .apm-nav::-webkit-scrollbar{display:none}
+}
+
+/* Gestão de usuários escalável v0.2.5 */
+.apm-users-v2{gap:14px}.apm-access-intro.compact{padding:18px 20px}.apm-access-intro.compact h3{font-size:20px;margin:4px 0 5px}.apm-user-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.apm-user-stats>div{background:#fff;border:1px solid var(--ap-line);border-radius:16px;padding:15px 17px;display:grid;gap:4px}.apm-user-stats span{font-size:10px;color:var(--ap-muted);font-weight:700}.apm-user-stats strong{font-size:23px;line-height:1;color:var(--ap-ink)}
+.apm-users-toolbar{display:grid;grid-template-columns:minmax(260px,1fr) 190px 190px;gap:10px;align-items:center}.apm-users-search{position:relative}.apm-users-search>span{position:absolute;z-index:2;left:14px;top:50%;transform:translateY(-50%);font-size:18px;color:#9b8b90;pointer-events:none}.apm-users-search input{padding-left:39px!important}.apm-users-table-card{overflow:hidden}.apm-users-table-card .apm-table-wrap{border:0;border-radius:0;box-shadow:none}.apm-users-table{min-width:860px}.apm-users-table th{font-size:10px;letter-spacing:.04em}.apm-users-table td{vertical-align:middle}.apm-user-cell{display:flex;align-items:center;gap:10px;min-width:220px}.apm-user-cell>div:last-child{min-width:0}.apm-user-cell strong,.apm-user-cell small{display:block}.apm-user-cell strong{font-size:12px}.apm-user-cell small{font-size:10px;color:var(--ap-muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:260px}.apm-user-avatar.small{width:34px;height:34px;font-size:10px}.apm-mini-yes{display:inline-flex;padding:5px 8px;border-radius:999px;background:#f4f0ff;color:#6752a6;font-size:9px;font-weight:800}.apm-modules-summary{font-size:10px;color:var(--ap-muted);white-space:nowrap}.apm-users-pagination{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px;border-top:1px solid var(--ap-line);background:#fcfafb}.apm-users-pagination>span{font-size:10px;color:var(--ap-muted)}.apm-users-pagination>div{display:flex;align-items:center;gap:8px}.apm-users-pagination select{width:132px!important;min-height:34px!important;height:34px!important;padding:6px 30px 6px 10px!important;font-size:10px!important}.apm-page-count{font-size:10px;color:var(--ap-muted);min-width:38px;text-align:center}.apm-users-pagination button:disabled{opacity:.45;cursor:not-allowed}
+.apm-user-drawer-backdrop{justify-content:flex-end;align-items:stretch;padding:0;background:rgba(33,23,26,.28);backdrop-filter:blur(2px)}.apm-user-drawer{width:min(560px,94vw);height:100vh;background:#fff;box-shadow:-24px 0 70px rgba(60,0,18,.16);display:flex;flex-direction:column;animation:apmDrawerIn .2s ease-out;overflow:hidden}.apm-user-drawer .apm-modal-head{border-bottom:1px solid var(--ap-line);padding:18px 20px}.apm-user-drawer .apm-modal-head>div{display:grid;gap:3px}.apm-user-drawer .apm-modal-head h3{margin:0}.apm-user-drawer .apm-modal-head span{font-size:10px;color:var(--ap-muted)}@keyframes apmDrawerIn{from{transform:translateX(26px);opacity:.7}to{transform:translateX(0);opacity:1}}.apm-user-drawer form{display:flex;flex-direction:column;min-height:0;flex:1}.apm-user-drawer-body{padding:18px 20px;overflow:auto;display:grid;gap:14px;flex:1}.apm-user-profile-head{display:flex;align-items:center;gap:11px;padding:14px;border:1px solid var(--ap-line);background:linear-gradient(135deg,#fff,#fff8fa);border-radius:16px}.apm-user-profile-head>div:nth-child(2){min-width:0;flex:1}.apm-user-profile-head strong,.apm-user-profile-head span,.apm-user-profile-head small{display:block}.apm-user-profile-head strong{font-size:13px}.apm-user-profile-head span{font-size:10px;color:var(--ap-muted);margin-top:2px}.apm-user-profile-head small{font-size:9px;color:#9a8b90;margin-top:3px}.apm-access-section{border:1px solid var(--ap-line);border-radius:16px;background:#fff;overflow:hidden}.apm-access-section>h4{font-size:12px;margin:0;padding:14px 16px;border-bottom:1px solid var(--ap-line)}.apm-access-section .apm-option-toggle{padding:13px 15px}.apm-access-section .apm-option-toggle+.apm-option-toggle{border-top:1px solid var(--ap-line)}.apm-section-title-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 16px;border-bottom:1px solid var(--ap-line)}.apm-section-title-row h4{margin:0;font-size:12px}.apm-section-title-row p{margin:3px 0 0;font-size:9px;color:var(--ap-muted)}.apm-section-title-row select{width:160px!important;min-height:38px!important;height:38px!important;font-size:10px!important}.apm-module-counter{font-size:9px;color:var(--ap-muted);white-space:nowrap}.apm-drawer-modules{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:12px}.apm-drawer-module{position:relative}.apm-drawer-module input{position:absolute;opacity:0;pointer-events:none}.apm-drawer-module>span{display:grid;grid-template-columns:30px 1fr;grid-template-rows:auto auto;column-gap:9px;align-items:center;padding:11px;border:1px solid var(--ap-line);border-radius:13px;background:#fff;cursor:pointer;transition:.16s}.apm-drawer-module>span>i{grid-row:1/3;width:30px;height:30px;border-radius:9px;background:#f6f0f2;color:var(--ap-wine);display:grid;place-items:center;font-style:normal;font-size:11px}.apm-drawer-module>span>b{font-size:10px}.apm-drawer-module>span>small{font-size:8px;color:var(--ap-muted);margin-top:2px}.apm-drawer-module input:checked+span{border-color:#d9a8b5;background:#fff5f7;box-shadow:0 0 0 2px rgba(143,0,31,.035)}.apm-drawer-module input:checked+span>i{background:var(--ap-wine);color:#fff}.apm-drawer-module.required>span{cursor:default}.apm-user-drawer .apm-modal-footer{padding:14px 20px;background:#fff;border-top:1px solid var(--ap-line)}
+@media(max-width:900px){.apm-user-stats{grid-template-columns:1fr 1fr}.apm-users-toolbar{grid-template-columns:1fr 1fr}.apm-users-search{grid-column:1/-1}}
+@media(max-width:620px){.apm-user-stats{grid-template-columns:1fr 1fr}.apm-users-toolbar{grid-template-columns:1fr}.apm-users-search{grid-column:auto}.apm-users-pagination{align-items:flex-start;flex-direction:column}.apm-users-pagination>div{width:100%;flex-wrap:wrap}.apm-users-pagination select{flex:1;width:auto!important}.apm-user-drawer{width:100vw}.apm-drawer-modules{grid-template-columns:1fr}.apm-section-title-row{align-items:stretch;flex-direction:column}.apm-section-title-row select{width:100%!important}}
+
+/* Rotas amigáveis /gestao/* v0.2.6 */
+html:has(body.apm-system-standalone),body.apm-system-standalone{margin:0!important;padding:0!important;width:100%;height:100%;overflow:hidden;background:#fbf8f9}
+body.apm-system-standalone #wpadminbar{display:none!important}
+body.apm-system-standalone .apm-root{position:fixed;inset:0}
+

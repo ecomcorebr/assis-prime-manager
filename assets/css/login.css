@@ -1,0 +1,31 @@
+:root{--ap-wine:#8f001f;--ap-wine-dark:#650016;--ap-rose:#f8e9ee;--ap-bg:#fbf7f8;--ap-text:#24191d;--ap-muted:#7b6870;--ap-line:#eadce1;--ap-green:#18885b}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--ap-bg);color:var(--ap-text)}body.apm-login-page{min-height:100vh}.apm-login-shell{min-height:100vh;display:grid;grid-template-columns:minmax(420px,44%) 1fr}.apm-login-brand-panel{position:relative;overflow:hidden;background:linear-gradient(145deg,#720019 0%,#8f001f 55%,#a20d32 100%);color:#fff}.apm-login-brand-panel:before,.apm-login-brand-panel:after{content:"";position:absolute;border-radius:50%;filter:blur(1px);background:rgba(255,255,255,.06)}.apm-login-brand-panel:before{width:360px;height:360px;right:-130px;top:-100px}.apm-login-brand-panel:after{width:260px;height:260px;left:-90px;bottom:-80px}.apm-login-brand-inner{position:relative;z-index:1;min-height:100vh;padding:54px 58px;display:flex;flex-direction:column}.apm-login-logo{width:180px;height:auto;object-fit:contain;filter:brightness(0) invert(1)}.apm-login-brand-copy{margin:auto 0}.apm-login-brand-copy span,.apm-login-kicker{font-size:12px;font-weight:900;letter-spacing:.16em}.apm-login-brand-copy span{color:#f8c8d5}.apm-login-brand-copy h1{font-size:42px;line-height:1.08;margin:18px 0 18px;max-width:600px}.apm-login-brand-copy p{font-size:15px;line-height:1.7;color:rgba(255,255,255,.78);max-width:520px}.apm-login-brand-foot{color:rgba(255,255,255,.58);font-size:12px}.apm-login-form-panel{display:grid;place-items:center;padding:50px 30px;background:radial-gradient(circle at 80% 10%,#fff0f4 0,transparent 26%),var(--ap-bg)}.apm-login-card{width:min(470px,100%);background:#fff;border:1px solid var(--ap-line);border-radius:28px;padding:42px;box-shadow:0 24px 70px rgba(77,17,37,.08)}.apm-login-mobile-logo{display:none}.apm-login-kicker{color:var(--ap-wine);margin-bottom:10px}.apm-login-card h2{font-size:30px;line-height:1.1;margin:0}.apm-login-sub{font-size:14px;color:var(--ap-muted);line-height:1.6;margin:12px 0 26px}.apm-login-alert{padding:12px 14px;border-radius:14px;margin:0 0 18px;font-size:12px;line-height:1.45}.apm-login-alert.error{background:#fff0f2;border:1px solid #efcbd4;color:#9f1736}.apm-login-alert.success{background:#edf8f3;border:1px solid #cde8dc;color:#176b4a}.apm-login-form{display:grid;gap:18px}.apm-login-field{display:grid;gap:8px}.apm-login-field label{font-size:12px;font-weight:800}.apm-login-field input{width:100%;height:50px;border:1px solid #decfd4;border-radius:14px;background:#fff;padding:0 14px;font-size:14px;color:var(--ap-text);outline:0;transition:.18s}.apm-login-field input:focus{border-color:#c9788f;box-shadow:0 0 0 4px rgba(143,0,31,.07)}.apm-login-label-row{display:flex;align-items:center;justify-content:space-between;gap:12px}.apm-login-label-row a,.apm-login-back{font-size:11px;font-weight:800;color:var(--ap-wine);text-decoration:none}.apm-login-label-row a:hover,.apm-login-back:hover{text-decoration:underline}.apm-password-wrap{position:relative}.apm-password-wrap input{padding-right:50px}.apm-password-toggle{position:absolute;right:8px;top:7px;width:36px;height:36px;border:0;border-radius:10px;background:#fbf1f4;color:var(--ap-wine);cursor:pointer;font-size:14px}.apm-password-toggle:hover{background:#f4dfe6}.apm-remember{display:flex;align-items:center;gap:9px;font-size:11px;color:var(--ap-muted);cursor:pointer}.apm-remember input{width:16px;height:16px;accent-color:var(--ap-wine)}.apm-login-submit{height:50px;border:0;border-radius:14px;background:linear-gradient(135deg,var(--ap-wine),#ad1037);color:#fff;font-size:13px;font-weight:900;cursor:pointer;box-shadow:0 12px 26px rgba(143,0,31,.18);transition:.18s}.apm-login-submit:hover{transform:translateY(-1px);box-shadow:0 16px 30px rgba(143,0,31,.23)}.apm-login-back{display:inline-flex;align-items:center;justify-content:center;margin-top:-4px}.apm-login-security{display:flex;gap:10px;align-items:flex-start;margin-top:24px;padding:14px;border-radius:14px;background:#fbf8f9;border:1px solid #eee1e5}.apm-login-security>span{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#e9f7f1;color:var(--ap-green);font-weight:900;flex:0 0 auto}.apm-login-security p{margin:0;font-size:10px;line-height:1.45;color:var(--ap-muted)}.apm-login-security strong{display:block;color:var(--ap-text);font-size:11px;margin-bottom:2px}.apm-login-footer{text-align:center;margin-top:22px;color:#9a8a90;font-size:10px}
+@media(max-width:900px){.apm-login-shell{grid-template-columns:1fr}.apm-login-brand-panel{display:none}.apm-login-form-panel{min-height:100vh;padding:24px 18px}.apm-login-card{padding:30px 24px;border-radius:22px}.apm-login-mobile-logo{display:flex;justify-content:center;margin-bottom:28px}.apm-login-mobile-logo img{width:170px;height:auto}.apm-login-card h2{font-size:26px}}
+@media(max-width:420px){.apm-login-card{padding:26px 20px}.apm-login-form-panel{padding:16px}.apm-login-card h2{font-size:24px}}
+
+/* v0.3.2 — QA responsivo da autenticação */
+.apm-login-shell,.apm-login-form-panel,.apm-login-card,.apm-login-form,.apm-login-field{min-width:0}
+@media(max-width:1200px){
+  .apm-login-shell{grid-template-columns:minmax(380px,40%) 1fr}
+  .apm-login-brand-inner{padding:46px 44px}
+  .apm-login-brand-copy h1{font-size:37px}
+}
+@media(max-width:900px){
+  .apm-login-form-panel{min-height:100dvh;padding-top:max(24px,env(safe-area-inset-top));padding-bottom:max(24px,env(safe-area-inset-bottom))}
+  .apm-login-card{width:min(500px,100%)}
+}
+@media(max-width:430px){
+  .apm-login-form-panel{padding:12px}
+  .apm-login-card{padding:24px 18px;border-radius:20px;box-shadow:0 14px 40px rgba(77,17,37,.07)}
+  .apm-login-mobile-logo{margin-bottom:22px}.apm-login-mobile-logo img{width:150px}
+  .apm-login-card h2{font-size:23px}.apm-login-sub{font-size:13px;margin-bottom:20px}
+  .apm-login-form{gap:15px}.apm-login-field input,.apm-login-submit{height:48px}
+  .apm-login-label-row{align-items:flex-start}.apm-login-label-row a{white-space:nowrap}
+  .apm-login-security{margin-top:18px;padding:12px}
+}
+@media(max-width:370px){
+  .apm-login-form-panel{padding:8px}
+  .apm-login-card{padding:21px 15px}
+  .apm-login-label-row{display:grid;gap:7px}
+  .apm-login-label-row a{justify-self:start}
+}

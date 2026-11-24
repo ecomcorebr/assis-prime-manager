@@ -1,0 +1,160 @@
+/* =========================================================
+   v0.3.3 — CORREÇÃO CRÍTICA DA NAVEGAÇÃO MOBILE
+   A sidebar desktop tinha min-height:100vh e continuava
+   ocupando a tela inteira mesmo com height reduzido.
+   ========================================================= */
+@media(max-width:680px){
+  .apm-root{
+    width:100%!important;
+    max-width:100%!important;
+    min-height:100dvh!important;
+    height:100dvh!important;
+    overflow:hidden!important;
+  }
+  .apm-shell{
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-height:100dvh!important;
+    height:100dvh!important;
+    overflow:hidden!important;
+  }
+  .apm-main{
+    position:relative!important;
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    height:100dvh!important;
+    min-height:100dvh!important;
+    margin:0!important;
+    padding:0 0 calc(72px + env(safe-area-inset-bottom))!important;
+    overflow-x:hidden!important;
+    overflow-y:auto!important;
+    background:#fbf8f9!important;
+  }
+  .apm-sidebar{
+    position:fixed!important;
+    left:0!important;
+    right:0!important;
+    top:auto!important;
+    bottom:0!important;
+    z-index:99990!important;
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    height:calc(68px + env(safe-area-inset-bottom))!important;
+    min-height:0!important;
+    max-height:calc(68px + env(safe-area-inset-bottom))!important;
+    margin:0!important;
+    padding:6px 8px calc(6px + env(safe-area-inset-bottom))!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+    background:linear-gradient(90deg,var(--ap-wine-dark),#7f001c)!important;
+    border-top:1px solid rgba(255,255,255,.12)!important;
+    box-shadow:0 -8px 28px rgba(64,0,18,.16)!important;
+  }
+  .apm-sidebar .apm-brand,
+  .apm-sidebar .apm-sidebar-public,
+  .apm-sidebar .apm-sidebar-footer{
+    display:none!important;
+  }
+  .apm-sidebar .apm-nav{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    align-items:stretch!important;
+    width:100%!important;
+    max-width:100%!important;
+    height:56px!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    gap:4px!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    overscroll-behavior-x:contain!important;
+    scroll-snap-type:x proximity!important;
+    scrollbar-width:none!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  .apm-sidebar .apm-nav::-webkit-scrollbar{display:none!important;width:0!important;height:0!important}
+  .apm-sidebar .apm-nav button{
+    position:relative!important;
+    display:flex!important;
+    flex:0 0 70px!important;
+    min-width:70px!important;
+    max-width:70px!important;
+    height:56px!important;
+    min-height:56px!important;
+    margin:0!important;
+    padding:5px 3px!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:2px!important;
+    border:0!important;
+    border-radius:11px!important;
+    background:transparent!important;
+    color:rgba(255,255,255,.82)!important;
+    box-shadow:none!important;
+    text-align:center!important;
+    scroll-snap-align:start!important;
+    appearance:none!important;
+    -webkit-appearance:none!important;
+  }
+  .apm-sidebar .apm-nav button.active{
+    background:rgba(255,255,255,.14)!important;
+    color:#fff!important;
+  }
+  .apm-sidebar .apm-nav button:hover{background:rgba(255,255,255,.09)!important;color:#fff!important}
+  .apm-sidebar .apm-nav .icon{
+    display:grid!important;
+    place-items:center!important;
+    width:23px!important;
+    height:23px!important;
+    min-width:23px!important;
+    margin:0 auto!important;
+    border-radius:7px!important;
+    background:transparent!important;
+    color:inherit!important;
+    font-size:13px!important;
+    line-height:1!important;
+  }
+  .apm-sidebar .apm-nav button>span:not(.icon):not(.soon){
+    display:block!important;
+    width:64px!important;
+    max-width:64px!important;
+    color:inherit!important;
+    font-size:7.5px!important;
+    font-weight:750!important;
+    line-height:1.05!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+  }
+  .apm-sidebar .apm-nav .soon{display:none!important}
+  .apm-topbar{
+    position:sticky!important;
+    top:0!important;
+    z-index:30!important;
+    width:100%!important;
+    box-sizing:border-box!important;
+  }
+  .apm-content{
+    width:100%!important;
+    max-width:100%!important;
+    box-sizing:border-box!important;
+    margin:0!important;
+    padding-bottom:24px!important;
+  }
+}
+
+@media(max-width:370px){
+  .apm-sidebar .apm-nav button{
+    flex-basis:64px!important;
+    min-width:64px!important;
+    max-width:64px!important;
+  }
+  .apm-sidebar .apm-nav button>span:not(.icon):not(.soon){width:58px!important;max-width:58px!important;font-size:7px!important}
+}
+

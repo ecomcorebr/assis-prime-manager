@@ -1,0 +1,49 @@
+*{box-sizing:border-box}
+body.apm-fill-page{margin:0;background:#f7f1f2;color:#3c2630;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.apm-fill-loading,.apm-fill-error{max-width:680px;margin:15vh auto;padding:30px;background:#fff;border-radius:24px;text-align:center}
+.apm-fill-shell{min-height:100vh;padding:32px 18px 60px}
+.apm-fill-brand{max-width:720px;margin:0 auto 18px;display:flex;align-items:center;justify-content:space-between}
+.apm-fill-brand img{width:150px;max-height:70px;object-fit:contain}
+.apm-fill-brand span{font-size:12px;letter-spacing:.16em;color:#8f001f;font-weight:800}
+.apm-fill-card{max-width:720px;margin:auto;background:#fff;border:1px solid #eadde1;border-radius:28px;padding:34px;box-shadow:0 18px 60px rgba(69,15,31,.08)}
+.apm-fill-card h1{font-size:26px;margin:0 0 6px}
+.apm-fill-meta{color:#7a6870;margin:0 0 18px}
+.apm-fill-appointment{margin-bottom:20px;padding:12px 16px;border-radius:14px;background:#fbf0e8;color:#7a4a1a;font-size:13.5px}
+.apm-fill-progress{display:flex;gap:6px;margin-bottom:26px}
+.apm-fill-progress span{flex:1;height:5px;border-radius:999px;background:#eee2e6}
+.apm-fill-progress span.active,.apm-fill-progress span.done{background:#8f001f}
+.apm-fill-step{display:none}
+.apm-fill-step.active{display:block}
+.apm-fill-step-head{margin-bottom:20px}
+.apm-fill-step-count{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8f001f}
+.apm-fill-step-head h2{font-size:21px;margin:6px 0 4px}
+.apm-fill-step-head p{margin:0;color:#7a6870;font-size:13.5px}
+.apm-fill-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px}
+.apm-field{display:flex;flex-direction:column;gap:7px}
+.apm-field.full{grid-column:1/-1}
+.apm-field label{font-weight:700;font-size:13px}
+.apm-text-input,.apm-select-input,.apm-textarea-input{height:46px;border:1px solid #ddcfd4;border-radius:12px;padding:0 13px;font-size:14px;font-family:inherit;background:#fff}
+.apm-textarea-input{height:auto;padding:11px 13px;resize:vertical}
+.apm-yesno{display:flex;gap:16px}
+.apm-yesno label{display:flex;align-items:center;gap:7px;font-weight:600;font-size:13.5px;cursor:pointer}
+.apm-field-detail{margin-top:6px;display:flex;flex-direction:column;gap:5px}
+.apm-field-detail.is-hidden{display:none}
+.apm-field-detail label{font-size:11.5px;color:#7a6870;font-weight:700}
+.apm-fill-declaration{display:flex;gap:10px;align-items:flex-start;margin:22px 0 0;font-size:13px;line-height:1.5;color:#62545a}
+.apm-fill-declaration input{margin-top:3px}
+.apm-fill-actions{display:flex;align-items:center;justify-content:space-between;margin-top:26px}
+.apm-btn-primary,.apm-btn-ghost{height:48px;padding:0 22px;border-radius:13px;font-size:14px;font-weight:800;cursor:pointer;border:0}
+.apm-btn-primary{background:#8f001f;color:#fff}
+.apm-btn-primary:disabled{opacity:.65}
+.apm-btn-ghost{background:transparent;color:#8f001f;border:1px solid #ead3da}
+.apm-fill-card footer{border-top:1px solid #eee2e6;margin-top:26px;padding-top:18px;color:#88747c;font-size:12px;text-align:center}
+@media(max-width:640px){
+  .apm-fill-shell{padding:18px 12px 40px}
+  .apm-fill-brand{padding:0 5px}
+  .apm-fill-brand img{width:110px}
+  .apm-fill-brand span{font-size:9px}
+  .apm-fill-card{padding:22px 17px;border-radius:22px}
+  .apm-fill-card h1{font-size:21px}
+  .apm-fill-grid{grid-template-columns:1fr}
+  .apm-fill-actions{flex-direction:row}
+}
